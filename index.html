@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Student Assistant</title>
+</head>
+
+<body>
+
+<h1>AI Student Assistant</h1>
+
+<input type="number" id="marks" placeholder="Enter Marks">
+
+<button onclick="checkResult()">Check Result</button>
+
+<h2 id="result"></h2>
+
+<script>
+function checkResult(){
+
+let marks=document.getElementById("marks").value;
+
+if(marks>=35){
+document.getElementById("result").innerHTML="Pass";
+}
+else{
+document.getElementById("result").innerHTML="Fail";
+}
+
+}
+</script>
+
+</body>
+</html>
